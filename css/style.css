@@ -43,7 +43,6 @@ header {
 
 nav {
   padding-top: 36px;
-  padding-bottom: 90px;
 }
 
 .container {
@@ -55,6 +54,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 70px;
 }
 
 .logo {
@@ -112,12 +112,13 @@ nav {
 
 .header-content {
   margin-left: 84px;
-  width: 534px;
+  margin-right: 581px;
 }
 
 .header-title {
   margin: 0;
   font-weight: 400;
+  font-style: normal;
   font-size: 50px;
   line-height: 124%;
   padding-bottom: 24px;
@@ -128,8 +129,8 @@ nav {
   margin: 0;
   font-size: 18px;
   line-height: 167%;
-  width: 493px;
-  margin-bottom: 21px;
+  margin-bottom: 20px;
+  margin-right: 100px;
 }
 
 .button {
@@ -148,7 +149,7 @@ nav {
 }
 
 .header-button {
-  margin-bottom: 168px;
+  margin-bottom: 160px;
 }
 
 .about-us {
