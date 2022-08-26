@@ -43,7 +43,6 @@ header {
 
 nav {
   padding-top: 36px;
-  padding-bottom: 90px;
 }
 
 .container {
@@ -55,6 +54,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 70px;
 }
 
 .logo {
@@ -67,6 +67,7 @@ nav {
 
 .logo:hover {
   color: #cc8b86;
+  transition: 0.2s;
 }
 
 .logo p {
@@ -108,16 +109,18 @@ nav {
 
 .nav-link:hover {
   color: #cc8b86;
+  transition: 0.2s;
 }
 
 .header-content {
   margin-left: 84px;
-  width: 534px;
+  margin-right: 581px;
 }
 
 .header-title {
   margin: 0;
   font-weight: 400;
+  font-style: normal;
   font-size: 50px;
   line-height: 124%;
   padding-bottom: 24px;
@@ -128,8 +131,8 @@ nav {
   margin: 0;
   font-size: 18px;
   line-height: 167%;
-  width: 493px;
-  margin-bottom: 21px;
+  margin-bottom: 20px;
+  margin-right: 100px;
 }
 
 .button {
@@ -145,10 +148,11 @@ nav {
 .button:hover {
   color: #cc8b86;
   background-color: #e5e5e5;
+  transition: 0.2s;
 }
 
 .header-button {
-  margin-bottom: 168px;
+  margin-bottom: 160px;
 }
 
 .about-us {
@@ -318,6 +322,7 @@ nav {
 
 .more-botton:hover {
   text-decoration: underline;
+  transition: 0.2s;
 }
 
 .our-team {
@@ -426,6 +431,10 @@ nav {
   cursor: pointer;
 }
 
+.slider-button:hover {
+  transform: translate();
+}
+
 .slider-button::before {
   content: "";
   position: absolute;
@@ -470,7 +479,6 @@ nav {
 
 .contact-row {
   display: flex;
-
 }
 
 .map {
@@ -482,7 +490,6 @@ nav {
 iframe {
   max-height: 100%;
 }
-
 
 .contact-content {
   color: #ffffff;
@@ -502,9 +509,6 @@ iframe {
   margin: 50px 0 34px;
 }
 
-
-
-
 input {
   display: inline-block;
   width: 508px;
@@ -514,7 +518,6 @@ input {
   border-bottom: 1px solid white;
   background-color: #8D7370;
 }
-
 
 input::placeholder {
   color: #F6EDE9;
