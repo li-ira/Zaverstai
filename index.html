@@ -241,9 +241,12 @@
             <h2 class="section-title">Оставить заявку</h2>
             <p class="section-text-contact">Оставьте свои контакты. Менеджер перезвонит
               в удобное вам время и ответит на все вопросы.</p>
-            <input name="name" type="text" placeholder="Ваше имя" class="input-name">
-            <input name="tel" type="tel" placeholder="Введите телефон" class="input-tel">
-            <a href="#contact" class="button contact-button">Оставить заявку</a>
+            <form action=# method="post" name="form">
+              <input name="name" type="text" placeholder="Ваше имя" class="input-name">
+              <input name="tel" type="tel" placeholder="Введите телефон" class="input-tel">
+              <input type="submit" value="Оставить заявку" class="button contact-button"></input>
+            </form>
+
           </div>
           <div class="map">
             <iframe
