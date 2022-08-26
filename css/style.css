@@ -432,7 +432,9 @@ nav {
 }
 
 .slider-button:hover {
-  transform: translate();
+  transform: scale(1.2);
+  transition: 0.2s;
+
 }
 
 .slider-button::before {
