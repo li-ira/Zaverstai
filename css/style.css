@@ -1,8 +1,25 @@
 *,
-*:before,
-*:after {
+*::before,
+*::after {
   box-sizing: border-box;
 }
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../fonts/Montserrat-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../fonts/Montserrat-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 
 body {
   margin: 0;
@@ -13,12 +30,14 @@ body {
   font-style: normal;
   background-color: #e5e5e5;
 }
+
 .none {
   display: none !important;
 }
 
 header {
   background-image: url(./../img/header-background.jpg);
+  background-repeat: no-repeat;
   background-size: 100%;
 }
 
@@ -31,6 +50,7 @@ nav {
   width: 1200px;
   margin: 0 auto;
 }
+
 .nav-row {
   display: flex;
   justify-content: space-between;
@@ -44,6 +64,7 @@ nav {
   text-decoration: none;
   color: #533738;
 }
+
 .logo:hover {
   color: #cc8b86;
 }
@@ -90,9 +111,10 @@ nav {
 }
 
 .header-content {
-  margin-left: 184px;
-  margin-right: 682px;
+  margin-left: 84px;
+  width: 534px;
 }
+
 .header-title {
   margin: 0;
   font-weight: 400;
@@ -100,24 +122,32 @@ nav {
   line-height: 124%;
   padding-bottom: 24px;
 }
+
 .header-text {
   font-weight: 400;
   margin: 0;
   font-size: 18px;
   line-height: 167%;
-  padding-right: 120px;
-  padding-bottom: 21px;
+  width: 493px;
+  margin-bottom: 21px;
 }
 
-.header-button {
+.button {
   display: inline-block;
-  font-style: normal;
   font-weight: 500;
   font-size: 20px;
   text-decoration: none;
   color: #533738;
   background-color: #cc8b86;
   padding: 25px 66px 24px 68px;
+}
+
+.button:hover {
+  color: #cc8b86;
+  background-color: #e5e5e5;
+}
+
+.header-button {
   margin-bottom: 168px;
 }
 
@@ -132,13 +162,12 @@ nav {
   padding-bottom: 21px;
 }
 
-.section-content img {
+.about-us-background {
   margin-right: 64px;
 }
 
 .section-title {
   margin: 0;
-  font-style: normal;
   font-weight: 400;
   font-size: 40px;
   line-height: 125%;
@@ -149,8 +178,6 @@ nav {
 
 .section-text {
   margin: 0;
-  font-style: normal;
-  font-weight: 400;
   font-size: 18px;
   line-height: 167%;
 }
@@ -168,7 +195,6 @@ nav {
 }
 
 .experience-text {
-  font-style: normal;
   font-weight: 500;
   font-size: 30px;
   text-transform: uppercase;
@@ -188,13 +214,13 @@ nav {
   padding-top: 66px;
 }
 
-.portfolio-img {
+.portfolio-item {
   display: flex;
   flex-wrap: wrap;
 }
+
 .section-title2 {
   margin: 0;
-  font-style: normal;
   font-weight: 400;
   font-size: 40px;
   line-height: 125%;
@@ -203,7 +229,7 @@ nav {
   margin-bottom: 40px;
 }
 
-.portfolio-img img {
+.portfolio-img {
   margin-right: 0;
 }
 
@@ -233,8 +259,8 @@ nav {
   top: -456px;
 }
 
-.apartment1:after,
-.apartment2:after {
+.apartment1::after,
+.apartment2::after {
   content: ' ';
   position: absolute;
   top: 0;
@@ -251,7 +277,6 @@ nav {
 
 .img-link {
   text-decoration: none;
-  font-style: normal;
   color: #ffffff;
   height: 451px;
   margin-right: 20px;
@@ -267,18 +292,15 @@ nav {
   margin: 86px 35px 122px;
 }
 
-h3 {
+.hover-title {
   margin: 0 74px;
-  font-style: normal;
   font-weight: 500;
   font-size: 30px;
   line-height: 37px;
   text-align: center;
 }
 
-.portfolio-text {
-  font-style: normal;
-  font-weight: 400;
+.hover-text {
   font-size: 18px;
   line-height: 167%;
 }
@@ -286,7 +308,6 @@ h3 {
 .more-botton {
   display: flex;
   justify-content: center;
-  font-style: normal;
   font-weight: 500;
   font-size: 30px;
   color: #533738;
@@ -315,9 +336,8 @@ h3 {
 .team-photo {
   margin: 0;
 }
+
 .team-content {
-  font-style: normal;
-  font-weight: 400;
   font-size: 18px;
   line-height: 167%;
   color: #533738;
@@ -338,9 +358,9 @@ h3 {
   padding-left: 0;
   margin: 0;
 }
+
 .number-principles {
   display: block;
-  font-style: normal;
   font-weight: 500;
   font-size: 30px;
   line-height: 30px;
@@ -353,6 +373,161 @@ h3 {
   width: 70px;
   padding: 20px;
   margin-bottom: 20px;
+}
+
+
+.reviews {
+  padding: 65px 0;
+}
+
+.reviews-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.review-item {
+  display: flex;
+  width: 834px;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.review-item .section-text {
+  align-self: center;
+  padding-right: 20px;
+}
+
+.review_anna_belovskaya {
+  margin-bottom: 20px;
+}
+
+.review_anna_belovskaya:last-child {
+  margin-bottom: 0;
+}
+
+.slider-buttons {
+  position: relative;
+  bottom: 330px;
+  left: 80px;
+  transform: translateY(-50%);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.slider-button {
+  position: relative;
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  border: none;
+  background-color: #CC8B86;
+  cursor: pointer;
+}
+
+.slider-button::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 32px;
+  height: 2px;
+  background-color: white;
+}
+
+.slider-button::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 42%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  width: 16px;
+  height: 16px;
+  border: 2px solid white;
+  border-top: none;
+  border-right: none;
+}
+
+.slider-button-next::after {
+  top: 50%;
+  left: 58%;
+  transform: translate(-50%, -50%) rotate(-135deg);
+}
+
+.slider-button-next {
+  right: 160px;
+}
+
+.contact {
+  background-color: #8D7370;
+}
+
+.contact-button {
+  margin-top: 31px;
+}
+
+.contact-row {
+  display: flex;
+
+}
+
+.map {
+  height: 624px;
+  width: 590px;
+  display: block;
+}
+
+iframe {
+  max-height: 100%;
+}
+
+
+.contact-content {
+  color: #ffffff;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.section-text-contact {
+  font-size: 18px;
+  line-height: 30px;
+  width: 507px;
+  opacity: 0.6;
+}
+
+.contact .section-title {
+  text-align: left;
+  margin: 50px 0 34px;
+}
+
+
+
+
+input {
+  display: inline-block;
+  width: 508px;
+  border-style: none;
+  padding: 16px 0;
+  border: 0;
+  border-bottom: 1px solid white;
+  background-color: #8D7370;
+}
+
+
+input::placeholder {
+  color: #F6EDE9;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.input-name {
+  margin-top: 34px;
+  margin-bottom: 19px;
 }
 
 .footer-list {
